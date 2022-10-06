@@ -1,4 +1,4 @@
-import 'package:airplane/ui/widgets/submit_button_component.dart';
+import 'package:airplane/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:airplane/shared/theme.dart';
 
@@ -33,8 +33,10 @@ class InputSection extends StatelessWidget {
             inputTitle: 'Hobby',
             hintText: 'Your Hobby',
           ),
-          const SubmitButton(
-            pageNavigation: '/bonus-page',
+          CustomButton(
+            width: 220,
+            title: 'Get Started',
+            onPressed: () => Navigator.pushNamed(context, '/bonus'),
           ),
         ],
       ),
@@ -52,13 +54,16 @@ Widget inputItem({
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(inputTitle, style: blackTextStyle),
+        Text(
+          inputTitle,
+          style: blackTextStyle,
+        ),
         const SizedBox(height: 6),
         TextFormField(
           obscureText: obscureText,
           cursorColor: kBlackColor,
           decoration: InputDecoration(
-            hintText: 'Your FullName',
+            hintText: hintText,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(defaultRadius),
             ),
