@@ -1,3 +1,4 @@
+import 'package:airplane/ui/pages/homepage/component/new_destination_component.dart';
 import 'package:airplane/ui/pages/homepage/component/popular_destination_component.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
       children: const [
         HeaderHomeComponent(),
         PopularDestinationComponent(),
+        NewDestinationComponent(),
       ],
     );
   }

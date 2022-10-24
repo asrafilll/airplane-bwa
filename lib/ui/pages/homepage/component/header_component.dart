@@ -7,10 +7,9 @@ class HeaderHomeComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(
-        left: defaultMargin,
-        right: defaultMargin,
-        top: 30,
+      margin: EdgeInsets.symmetric(
+        horizontal: defaultMargin,
+        vertical: 30,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
