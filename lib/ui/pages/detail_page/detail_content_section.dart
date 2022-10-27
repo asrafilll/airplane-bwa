@@ -70,10 +70,9 @@ class DetailContentSection extends StatelessWidget {
 
           // CONTENT
           Container(
+            width: double.infinity,
             margin: const EdgeInsets.only(
               top: 30,
-              left: 24,
-              right: 24,
             ),
             padding: const EdgeInsets.symmetric(
               vertical: 30,
@@ -81,6 +80,77 @@ class DetailContentSection extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               color: kWhiteColor,
+              borderRadius: BorderRadius.circular(defaultRadius),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'About',
+                  style: blackTextStyle.copyWith(
+                    fontWeight: semibold,
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  'Berada di jalur jalan provinsi yang menghubungkan Denpasar Singaraja serta letaknya yang dekat dengan Kebun Raya Eka Karya menjadikan tempat Bali.',
+                  style: blackTextStyle.copyWith(height: 1.9),
+                ),
+                const SizedBox(height: 30),
+                Text(
+                  'Photos',
+                  style: blackTextStyle.copyWith(
+                    fontWeight: semibold,
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Row(
+                  children: [
+                    Container(
+                      width: 60,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image_destination1.png'),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    Container(
+                      width: 60,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image_destination1.png'),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    Container(
+                      width: 60,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image_destination1.png'),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(height: 30),
+                Text(
+                  'Interests',
+                  style: blackTextStyle.copyWith(
+                    fontWeight: semibold,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
