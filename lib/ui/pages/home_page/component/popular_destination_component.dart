@@ -1,5 +1,5 @@
 import 'package:airplane/shared/theme.dart';
-import 'package:airplane/ui/pages/homepage/component/destination_card.dart';
+import 'package:airplane/ui/pages/home_page/component/destination_card.dart';
 import 'package:flutter/material.dart';
 
 class PopularDestinationComponent extends StatelessWidget {
